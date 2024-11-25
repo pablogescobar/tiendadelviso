@@ -1,0 +1,168 @@
+/* Fuente y fondo principal */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente más moderna */
+    background-color: #f8f9fa; /* Fondo claro y limpio */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #343a40; /* Gris oscuro profesional */
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #ffc107; /* Línea decorativa */
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #ffc107; /* Amarillo llamativo */
+}
+
+/* Contenedor de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 20px;
+}
+
+/* Tarjeta de producto */
+.producto {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #dee2e6;
+}
+
+.producto:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-color: #ffc107;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: contain;
+    height: 250px;
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.producto p {
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+button {
+    background-color: #ffc107; /* Amarillo vibrante */
+    color: #343a40;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0a800;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Carrito */
+.carrito {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+}
+
+.carrito h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border-color: #ffc107;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #495057;
+    color: #ffc107;
+}

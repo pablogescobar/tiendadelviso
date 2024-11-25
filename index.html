@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaDelViso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TiendaDelViso</h1>
+        <h2>Compra los mejores productos al mejor precio</h2>
+        <h3>Contacto :011-63668994</h3>
+    </header>
+
+    <section class="productos">
+        <div class="producto">
+            <img src="img/a1.jpg" alt="Producto 1">
+            <h3>Auriculares newest m10</h3>
+            <p>Precio: $14.000</p>
+            <label for="cantidad1">Cantidad:</label>
+            <input type="number" id="cantidad1" value="1" min="1">
+            <button onclick="agregarCarrito(1, 100)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/a2.jpg" alt="Producto 2">
+            <h3>Set Matero</h3>
+                            <p>Precio: $50.000</p>
+            <label for="cantidad2">Cantidad:</label>
+            <input type="number" id="cantidad2" value="1" min="1">
+            <button onclick="agregarCarrito(2, 150)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/a3.jpg" alt="Producto 3">
+            <h3>Cortadora de pelo para mascotas</h3>
+            <p>Precio: $24.000</p>
+            <label for="cantidad3">Cantidad:</label>
+            <input type="number" id="cantidad3" value="1" min="1">
+            <button onclick="agregarCarrito(3, 200)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/a4.jpg" alt="Producto 4">
+            <h3>Mates</h3>
+            <p>Precio: $6.000</p>
+            <label for="cantidad4">Cantidad:</label>
+            <input type="number" id="cantidad4" value="1" min="1">
+            <button onclick="agregarCarrito(4, 250)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/a5.jpg" alt="Producto 5">
+            <h3>Luz de Emergencia</h3>
+            <p>Precio: $22.000</p>
+            <label for="cantidad5">Cantidad:</label>
+            <input type="number" id="cantidad5" value="1" min="1">
+            <button onclick="agregarCarrito(5, 300)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/a6.jpg" alt = "Producto 6">
+            <h3>Auriculares</h3>
+            <p>Precio: $17.000</p>
+            <label for="cantidad6">Cantidad:</label>
+            <input type="number" id="cantidad6" value="1" min="1">
+            <button onclick="agregarCarrito(6, 350)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/a7.jpg" alt="Producto 7">
+            <h3>Veladores con usb</h3>
+            <p>Precio: $12.000</p>
+            <label for="cantidad7">Cantidad:</label>
+            <input type="number" id="cantidad7" value="1" min="1">
+            <button onclick="agregarCarrito(7, 400)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/lampara parlante.jpeg" alt="Producto 8">
+            <h3>lampara parlante</h3>
+            <p>Precio: $30.000</p>
+            <label for="cantidad8">Cantidad:</label>
+            <input type="number" id="cantidad8" value="1" min="1">
+            <button onclick="agregarCarrito(8, 450)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/linterna pesquera.jpg" alt="Producto 9">
+            <h3>linterna pesquera</h3>
+            <p>Precio: $10.000</p>
+            <label for="cantidad9">Cantidad:</label>
+            <input type="number" id="cantidad9" value="1" min="1">
+            <button onclick="agregarCarrito(9, 500)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/soporte de tv fijo.jpg" alt="Producto 10">
+            <h3>soporte de tv fijo</h3>
+            <p>Precio: $12.000</p>
+            <label for="cantidad10">Cantidad:</label>
+            <input type="number" id="cantidad10" value="1" min="1">
+            <button onclick="agregarCarrito(9, 500)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/termo camping.jpg" alt="Producto 11">
+            <h3>Termo camping</h3>
+            <p>Precio: $9.000</p>
+            <label for="cantidad11">Cantidad:</label>
+            <input type="number" id="cantidad11" value="1" min="1">
+            <button onclick="agregarCarrito(9, 500)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/lampara mata insectos.jpg" alt="Producto 12">
+            <h3>Lampara mata insectos</h3>
+            <p>Precio: $10.000</p>
+            <label for="cantidad12">Cantidad:</label>
+            <input type="number" id="cantidad12" value="1" min="1">
+            <button onclick="agregarCarrito(9, 500)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <section class="carrito">
+        <h2></h2>
+        <ul id="listaCarrito">
+            <!-- Productos seleccionados se agregarán aquí -->
+        </ul>
+        <p>Total a pagar: $<span id="total">0</span></p>
+
+        <form id="formularioCompra">
+            
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">En breve nos contactaremos</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
