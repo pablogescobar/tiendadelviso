@@ -45,7 +45,8 @@ header h2 {
     background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
-    width: 100%;
+    width: 100%; /* Ajuste automático al contenedor */
+    max-width: 300px; /* Limitar el ancho de la tarjeta */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -176,14 +177,12 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
     .productos {
-        grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+        grid-template-columns: 1fr; /* 1 columna en móviles */
     }
 
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    header h2 {
-        font-size: 1.2rem;
+    .producto {
+        width: 90%; /* Más pequeño en móviles */
+        max-width: none; /* Elimina restricciones de ancho máximo */
+        margin: 0 auto; /* Centrar tarjeta */
     }
 }
